@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A4D03691B5042F800C32D22 /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03681B5042F800C32D22 /* Skeleton.swift */; };
+		1A4D036D1B50435D00C32D22 /* FlexibleSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D036C1B50435D00C32D22 /* FlexibleSkeleton.swift */; };
+		1A4D036F1B50437000C32D22 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D036E1B50437000C32D22 /* Edge.swift */; };
+		1A4D03711B5043B400C32D22 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03701B5043B400C32D22 /* Skin.swift */; };
+		1A4D03731B5044BA00C32D22 /* EmbeddingSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03721B5044BA00C32D22 /* EmbeddingSkeleton.swift */; };
+		1A4D03751B50451800C32D22 /* MotherSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03741B50451800C32D22 /* MotherSkeleton.swift */; };
+		1A4D03771B50456000C32D22 /* TextSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03761B50456000C32D22 /* TextSkeleton.swift */; };
+		1A4D037A1B50471200C32D22 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03791B50471200C32D22 /* Water.swift */; };
+		1A4D037C1B50485400C32D22 /* BareSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D037B1B50485400C32D22 /* BareSkeleton.swift */; };
+		1A4D037E1B5048BF00C32D22 /* WaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D037D1B5048BF00C32D22 /* WaterTests.swift */; };
 		1A9604A81B5036E70088AD18 /* Skeleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9604A71B5036E70088AD18 /* Skeleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A9604AE1B5036E70088AD18 /* Skeleton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9604A21B5036E70088AD18 /* Skeleton.framework */; };
 		1A9604B51B5036E70088AD18 /* SkeletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9604B41B5036E70088AD18 /* SkeletonTests.swift */; };
@@ -23,6 +33,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A4D03681B5042F800C32D22 /* Skeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skeleton.swift; sourceTree = "<group>"; };
+		1A4D036C1B50435D00C32D22 /* FlexibleSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleSkeleton.swift; sourceTree = "<group>"; };
+		1A4D036E1B50437000C32D22 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		1A4D03701B5043B400C32D22 /* Skin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
+		1A4D03721B5044BA00C32D22 /* EmbeddingSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddingSkeleton.swift; sourceTree = "<group>"; };
+		1A4D03741B50451800C32D22 /* MotherSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherSkeleton.swift; sourceTree = "<group>"; };
+		1A4D03761B50456000C32D22 /* TextSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSkeleton.swift; sourceTree = "<group>"; };
+		1A4D03791B50471200C32D22 /* Water.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
+		1A4D037B1B50485400C32D22 /* BareSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BareSkeleton.swift; sourceTree = "<group>"; };
+		1A4D037D1B5048BF00C32D22 /* WaterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterTests.swift; sourceTree = "<group>"; };
 		1A9604A21B5036E70088AD18 /* Skeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Skeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9604A61B5036E70088AD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A9604A71B5036E70088AD18 /* Skeleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Skeleton.h; sourceTree = "<group>"; };
@@ -50,6 +70,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A4D03781B50456D00C32D22 /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				1A4D03681B5042F800C32D22 /* Skeleton.swift */,
+				1A4D03721B5044BA00C32D22 /* EmbeddingSkeleton.swift */,
+				1A4D036C1B50435D00C32D22 /* FlexibleSkeleton.swift */,
+				1A4D03741B50451800C32D22 /* MotherSkeleton.swift */,
+				1A4D03761B50456000C32D22 /* TextSkeleton.swift */,
+				1A4D037B1B50485400C32D22 /* BareSkeleton.swift */,
+				1A4D03791B50471200C32D22 /* Water.swift */,
+			);
+			name = Skeleton;
+			sourceTree = "<group>";
+		};
 		1A9604981B5036E70088AD18 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +107,9 @@
 			children = (
 				1A9604A71B5036E70088AD18 /* Skeleton.h */,
 				1A9604A51B5036E70088AD18 /* Supporting Files */,
+				1A4D036E1B50437000C32D22 /* Edge.swift */,
+				1A4D03781B50456D00C32D22 /* Skeleton */,
+				1A4D03701B5043B400C32D22 /* Skin.swift */,
 			);
 			path = Skeleton;
 			sourceTree = "<group>";
@@ -89,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				1A9604B41B5036E70088AD18 /* SkeletonTests.swift */,
+				1A4D037D1B5048BF00C32D22 /* WaterTests.swift */,
 				1A9604B21B5036E70088AD18 /* Supporting Files */,
 			);
 			path = SkeletonTests;
@@ -209,6 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4D03751B50451800C32D22 /* MotherSkeleton.swift in Sources */,
+				1A4D036D1B50435D00C32D22 /* FlexibleSkeleton.swift in Sources */,
+				1A4D036F1B50437000C32D22 /* Edge.swift in Sources */,
+				1A4D037C1B50485400C32D22 /* BareSkeleton.swift in Sources */,
+				1A4D037A1B50471200C32D22 /* Water.swift in Sources */,
+				1A4D03691B5042F800C32D22 /* Skeleton.swift in Sources */,
+				1A4D03731B5044BA00C32D22 /* EmbeddingSkeleton.swift in Sources */,
+				1A4D03711B5043B400C32D22 /* Skin.swift in Sources */,
+				1A4D03771B50456000C32D22 /* TextSkeleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A9604B51B5036E70088AD18 /* SkeletonTests.swift in Sources */,
+				1A4D037E1B5048BF00C32D22 /* WaterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +371,7 @@
 		1A9604B91B5036E70088AD18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +381,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1A9604BA1B5036E70088AD18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -399,6 +450,7 @@
 				1A9604BA1B5036E70088AD18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A9604BB1B5036E70088AD18 /* Build configuration list for PBXNativeTarget "SkeletonTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +459,7 @@
 				1A9604BD1B5036E70088AD18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
