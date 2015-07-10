@@ -9,6 +9,7 @@
 import UIKit
 
 public struct ReadableText : Element {
+
     public var font : UIFont?
     public var text : String
 

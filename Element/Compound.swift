@@ -10,6 +10,8 @@ import Foundation
 
 public class Compound: Element {
 
+    public var elements : [Element] = []
+
     // MARK: - Skin protocol
 
     public var margin:Edge = Edge()
@@ -17,14 +19,25 @@ public class Compound: Element {
 
     // MARK: - Element protocol
 
+    public init(elements: [Element] = []) {
+        self.elements = elements
+    }
+
     public func sizeThatFits(size: CGSize) -> CGSize {
-        return CGSizeZero
+        let fittingSize = CGSizeMake(
+            min(padding.width, size.width),
+            min(padding.height, size.height)
+        )
+        return fittingSize
     }
 
     public func intrinsicContentSize() -> CGSize {
         return CGSizeZero
     }
 
-    
+    public func addElement(element: Element) {
+        self.elements.append(element)
+    }
+
 }
 

@@ -21,10 +21,10 @@ public class Water : Compound {
             warn("unable to contain liters:\(liter) in size:\(size). Leaking away...")
             return size
         } else if liter > size.width {
-            var height = ceil(liter / size.width)
+            let height = ceil(liter / size.width)
             return CGSizeMake(size.width, height)
         } else if liter > size.height {
-            var width = ceil(liter / size.height)
+            let width = ceil(liter / size.height)
             return CGSizeMake(width, size.height)
         } else {
             return size

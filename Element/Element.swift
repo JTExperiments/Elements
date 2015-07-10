@@ -9,15 +9,14 @@
 import Foundation
 
 public func speak<T>(thing: T) {
-    println("Element: \(thing)")
+    print("Element: \(thing)")
 }
 
 public func warn<T>(thing: T) {
-    println("ElementWarn: \(thing)")
+    print("ElementWarn: \(thing)")
 }
 
 public protocol Element {
     func intrinsicContentSize() -> CGSize
     func sizeThatFits(size:CGSize) -> CGSize
 }
-

@@ -16,7 +16,7 @@
 		1A4D037E1B5048BF00C32D22 /* WaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D037D1B5048BF00C32D22 /* WaterTests.swift */; };
 		1A9604A81B5036E70088AD18 /* Element.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9604A71B5036E70088AD18 /* Element.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A9604AE1B5036E70088AD18 /* Element.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9604A21B5036E70088AD18 /* Element.framework */; };
-		1A9604B51B5036E70088AD18 /* ElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9604B41B5036E70088AD18 /* ElementTests.swift */; };
+		1A9604B51B5036E70088AD18 /* CompoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9604B41B5036E70088AD18 /* CompoundTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 		1A9604A71B5036E70088AD18 /* Element.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
 		1A9604AD1B5036E70088AD18 /* ElementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9604B31B5036E70088AD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A9604B41B5036E70088AD18 /* ElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementTests.swift; sourceTree = "<group>"; };
+		1A9604B41B5036E70088AD18 /* CompoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 		1A9604B11B5036E70088AD18 /* ElementTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A9604B41B5036E70088AD18 /* ElementTests.swift */,
+				1A9604B41B5036E70088AD18 /* CompoundTests.swift */,
 				1A4D037D1B5048BF00C32D22 /* WaterTests.swift */,
 				1A9604B21B5036E70088AD18 /* Supporting Files */,
 			);
@@ -252,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A9604B51B5036E70088AD18 /* ElementTests.swift in Sources */,
+				1A9604B51B5036E70088AD18 /* CompoundTests.swift in Sources */,
 				1A4D037E1B5048BF00C32D22 /* WaterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

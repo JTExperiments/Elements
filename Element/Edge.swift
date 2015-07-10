@@ -15,6 +15,13 @@ public struct Edge {
     public let right:CGFloat
     public let top:CGFloat
 
+    public var width: CGFloat {
+        return self.left + self.right
+    }
+    public var height: CGFloat {
+        return self.top + self.bottom
+    }
+
     public init(top: CGFloat = 0, left: CGFloat = 0, bottom: CGFloat = 0, right: CGFloat = 0) {
         self.left = left
         self.bottom = bottom

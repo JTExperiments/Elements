@@ -37,4 +37,14 @@ class WaterTests: XCTestCase {
         XCTAssertEqual(water.intrinsicContentSize(), CGSizeMake(9, 1), "")
     }
 
+    func testPaddingWater() {
+        water.padding = Edge(top: 1, left: 2, bottom:1, right: 2)
+//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(3, 5)), CGSizeMake(3, 3), "")
+//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(1, 9)), CGSizeMake(1, 9), "")
+//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(9, 1)), CGSizeMake(9, 1), "")
+//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(5, 5)), CGSizeMake(5, 2), "")
+//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(2, 6)), CGSizeMake(2, 5), "")
+//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(2, 2)), CGSizeMake(2, 2), "")
+    }
+
 }
