@@ -20,26 +20,11 @@ public class Compound: Element {
     }
 
     public func sizeThatFits(size: CGSize) -> CGSize {
-//        var rect : CGRect = CGRectNull
-//        for (index, element) in elements.enumerate() {
-//            var elementRect = CGRectZero
-//            if index == 0 {
-//                elementRect.size = size
-//            }
-//            rect = CGRectUnion(rect, element.frameThatFits(elementRect))
-//        }
-//        return rect.size
-//        return size
-        return self.intrinsicContentSize()
+        return self.frame.size
     }
 
     public func intrinsicContentSize() -> CGSize {
-        var rect = CGRectZero
-        for element in elements {
-            rect = CGRectUnion(rect, element.frameThatFits(self.frame))
-        }
-        return rect.size
-//        return CGSizeMake(-1, -1)
+        return CGSizeMake(-1, -1)
     }
 
     public func addElement(element: Element) {
