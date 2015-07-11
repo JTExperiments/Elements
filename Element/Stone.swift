@@ -13,6 +13,7 @@ public class Stone : Skinnable {
     private let size : CGSize
     public var padding : Edge = Edge()
     public var bounds : CGRect = CGRectZero
+    public weak var parent : Compound?
 
     public init(size: CGSize) {
         self.size = size

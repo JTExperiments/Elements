@@ -27,7 +27,3 @@ public func max(lhs: CGPoint, _ rhs: CGPoint) -> CGPoint {
 public func diff(lhs: CGPoint, _ rhs: CGPoint) -> CGSize {
     return CGSizeMake(lhs.x - rhs.x, lhs.y - rhs.y)
 }
-
-public extension CGRect {
-    
-}

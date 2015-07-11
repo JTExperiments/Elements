@@ -8,11 +8,12 @@
 
 import UIKit
 
-public struct ReadableText : Element {
+public class ReadableText : Element {
 
     public var font : UIFont?
-    public var text : String
+    public var text : String = ""
     public var bounds : CGRect = CGRectNull
+    public weak var parent : Compound?
 
     // MARK: - Element protocol
 

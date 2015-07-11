@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A313ABB1B51436E0078BA06 /* LayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A313ABA1B51436E0078BA06 /* LayoutTests.swift */; };
 		1A4B55F91B505CF500280F55 /* Stone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55F81B505CF500280F55 /* Stone.swift */; };
 		1A4B55FB1B505D3B00280F55 /* StoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55FA1B505D3B00280F55 /* StoneTests.swift */; };
 		1A4B55FD1B50CB1000280F55 /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55FC1B50CB1000280F55 /* Balloon.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1A15ED081B510E6500CF76DF /* Element.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Element.playground; sourceTree = "<group>"; };
+		1A313ABA1B51436E0078BA06 /* LayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutTests.swift; sourceTree = "<group>"; };
 		1A4B55F81B505CF500280F55 /* Stone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stone.swift; sourceTree = "<group>"; };
 		1A4B55FA1B505D3B00280F55 /* StoneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoneTests.swift; sourceTree = "<group>"; };
 		1A4B55FC1B50CB1000280F55 /* Balloon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				1A4B55FE1B50CD6A00280F55 /* BalloonTests.swift */,
 				1A9604B41B5036E70088AD18 /* CompoundTests.swift */,
+				1A313ABA1B51436E0078BA06 /* LayoutTests.swift */,
 				1A4B55FA1B505D3B00280F55 /* StoneTests.swift */,
 				1A4D037D1B5048BF00C32D22 /* WaterTests.swift */,
 				1AFDF2D81B511ACE001CD234 /* WrapperTests.swift */,
@@ -292,6 +295,7 @@
 				1A4D037E1B5048BF00C32D22 /* WaterTests.swift in Sources */,
 				1AFDF2D91B511ACE001CD234 /* WrapperTests.swift in Sources */,
 				1A4B55FF1B50CD6A00280F55 /* BalloonTests.swift in Sources */,
+				1A313ABB1B51436E0078BA06 /* LayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

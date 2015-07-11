@@ -12,6 +12,7 @@ public class Water : Element {
 
     public var bounds : CGRect = CGRectZero
     public let liter : CGFloat
+    public weak var parent : Compound?
 
     public init(liter: CGFloat) {
         self.liter = liter
