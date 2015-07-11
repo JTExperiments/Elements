@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A4B55F91B505CF500280F55 /* Stone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55F81B505CF500280F55 /* Stone.swift */; };
+		1A4B55FB1B505D3B00280F55 /* StoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55FA1B505D3B00280F55 /* StoneTests.swift */; };
 		1A4D03691B5042F800C32D22 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03681B5042F800C32D22 /* Element.swift */; };
 		1A4D036F1B50437000C32D22 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D036E1B50437000C32D22 /* Edge.swift */; };
 		1A4D03711B5043B400C32D22 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03701B5043B400C32D22 /* Skin.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A4B55F81B505CF500280F55 /* Stone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stone.swift; sourceTree = "<group>"; };
+		1A4B55FA1B505D3B00280F55 /* StoneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoneTests.swift; sourceTree = "<group>"; };
 		1A4D03681B5042F800C32D22 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		1A4D036E1B50437000C32D22 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		1A4D03701B5043B400C32D22 /* Skin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 				1A4D037B1B50485400C32D22 /* Compound.swift */,
 				1A4D03761B50456000C32D22 /* ReadableText.swift */,
 				1A4D03791B50471200C32D22 /* Water.swift */,
+				1A4B55F81B505CF500280F55 /* Stone.swift */,
 			);
 			name = Element;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				1A9604B41B5036E70088AD18 /* CompoundTests.swift */,
 				1A4D037D1B5048BF00C32D22 /* WaterTests.swift */,
+				1A4B55FA1B505D3B00280F55 /* StoneTests.swift */,
 				1A9604B21B5036E70088AD18 /* Supporting Files */,
 			);
 			path = ElementTests;
@@ -240,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A4D036F1B50437000C32D22 /* Edge.swift in Sources */,
+				1A4B55F91B505CF500280F55 /* Stone.swift in Sources */,
 				1A4D037C1B50485400C32D22 /* Compound.swift in Sources */,
 				1A4D037A1B50471200C32D22 /* Water.swift in Sources */,
 				1A4D03691B5042F800C32D22 /* Element.swift in Sources */,
@@ -252,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4B55FB1B505D3B00280F55 /* StoneTests.swift in Sources */,
 				1A9604B51B5036E70088AD18 /* CompoundTests.swift in Sources */,
 				1A4D037E1B5048BF00C32D22 /* WaterTests.swift in Sources */,
 			);
