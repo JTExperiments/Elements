@@ -17,14 +17,14 @@ public func warn<T>(thing: T) {
 }
 
 public protocol Element {
-    var frame : CGRect { get set }
+    var bounds : CGRect { get set }
     func intrinsicContentSize() -> CGSize
     func sizeThatFits(size:CGSize) -> CGSize
     func frameThatFits(frame: CGRect) -> CGRect
 }
 
 extension Element {
-    public func frameThatFits(frame: CGRect) -> CGRect {
-        return self.frame
+    public func frameThatFits(bounds: CGRect) -> CGRect {
+        return self.bounds
     }
 }

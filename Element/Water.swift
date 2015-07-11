@@ -10,12 +10,12 @@ import Foundation
 
 public class Water : Element {
 
-    public var frame : CGRect = CGRectZero
+    public var bounds : CGRect = CGRectZero
     public let liter : CGFloat
 
     public init(liter: CGFloat) {
         self.liter = liter
-        self.frame = CGRectMake(0, 0, liter, 1)
+        self.bounds = CGRectMake(0, 0, liter, 1)
     }
 
     public func sizeThatFits(size: CGSize) -> CGSize {
@@ -37,14 +37,14 @@ public class Water : Element {
         return CGSizeMake(liter, 1)
     }
 
-    public func frameThatFits(frame: CGRect) -> CGRect {
-        let size = sizeThatFits(frame.size)
+    public func frameThatFits(bounds: CGRect) -> CGRect {
+        let size = sizeThatFits(bounds.size)
         let newFrame = CGRectMake(
-            self.frame.origin.x,
-            self.frame.origin.y,
+            self.bounds.origin.x,
+            self.bounds.origin.y,
             size.width,
             size.height)
-        speak("Water: frameThatFits: old:\(frame.size), new: \(newFrame)")
+        speak("Water: frameThatFits: old:\(bounds.size), new: \(newFrame)")
         return newFrame
     }
 

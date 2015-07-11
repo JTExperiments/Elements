@@ -38,7 +38,7 @@ class WrapperTests: XCTestCase {
     }
 
     func testFrame() {
-        wrapper.frame = CGRectMake(0, 0, 300, 300)
+        wrapper.bounds = CGRectMake(0, 0, 300, 300)
         XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeZero, "")
     }
 
@@ -49,17 +49,17 @@ class WrapperTests: XCTestCase {
         XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeMake(5, 4), "")
 
         let stone1 = Stone(size: CGSizeMake(1, 1))
-        stone1.frame.origin = CGPointMake(9, 3)
+        stone1.bounds.origin = CGPointMake(9, 3)
         wrapper.addElement(stone1)
         XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeMake(10, 4), "")
 
         let stone2 = Stone(size: CGSizeMake(1, 1))
-        stone2.frame.origin = CGPointMake(9, 9)
+        stone2.bounds.origin = CGPointMake(9, 9)
         wrapper.addElement(stone2)
         XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeMake(10, 10), "")
 
         let stone3 = Stone(size: CGSizeMake(1, 1))
-        stone3.frame.origin = CGPointMake(-1, -1)
+        stone3.bounds.origin = CGPointMake(-1, -1)
         wrapper.addElement(stone3)
         XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeMake(11, 11), "")
     }

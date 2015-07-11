@@ -13,7 +13,7 @@ class BalloonTests: XCTestCase {
 
     var balloon : Balloon = {
         let balloon = Balloon(volume: 9)
-        balloon.frame = CGRectMake(0, 0, 9, 1)
+        balloon.bounds = CGRectMake(0, 0, 9, 1)
         return balloon
     }()
 
@@ -61,11 +61,11 @@ class BalloonTests: XCTestCase {
     }
 
     func testFrame() {
-        XCTAssertEqual(Balloon(volume: 1).frame, CGRectMake(0, 0, 1, 1), "")
-        XCTAssertEqual(Balloon(volume: 2).frame, CGRectMake(0, 0, 2, 1), "")
-        XCTAssertEqual(Balloon(volume: 3).frame, CGRectMake(0, 0, 2, 2), "")
-        XCTAssertEqual(Balloon(volume: 5).frame, CGRectMake(0, 0, 3, 2), "")
-        XCTAssertEqual(Balloon(volume: 7).frame, CGRectMake(0, 0, 3, 3), "")
-        XCTAssertEqual(Balloon(volume: 8).frame, CGRectMake(0, 0, 3, 3), "")
+        XCTAssertEqual(Balloon(volume: 1).bounds, CGRectMake(0, 0, 1, 1), "")
+        XCTAssertEqual(Balloon(volume: 2).bounds, CGRectMake(0, 0, 2, 1), "")
+        XCTAssertEqual(Balloon(volume: 3).bounds, CGRectMake(0, 0, 2, 2), "")
+        XCTAssertEqual(Balloon(volume: 5).bounds, CGRectMake(0, 0, 3, 2), "")
+        XCTAssertEqual(Balloon(volume: 7).bounds, CGRectMake(0, 0, 3, 3), "")
+        XCTAssertEqual(Balloon(volume: 8).bounds, CGRectMake(0, 0, 3, 3), "")
     }
 }

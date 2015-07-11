@@ -17,7 +17,7 @@ public class Wrapper : Compound {
 //            if index == 0 {
 //                elementRect.size = size
 //            }
-//            rect = CGRectUnion(rect, element.frameThatFits(elementRect))
+//            rect = CGRectUnion(rect, element.boundsThatFits(elementRect))
 //        }
 //        return rect.size
         return self.intrinsicContentSize()
@@ -26,7 +26,7 @@ public class Wrapper : Compound {
     public override func intrinsicContentSize() -> CGSize {
         var rect = CGRectZero
         for element in elements {
-            rect = CGRectUnion(rect, element.frameThatFits(self.frame))
+            rect = CGRectUnion(rect, element.frameThatFits(self.bounds))
         }
         return rect.size
     }

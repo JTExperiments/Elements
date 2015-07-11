@@ -10,7 +10,7 @@ import Foundation
 
 public class Compound: Element {
 
-    public var frame : CGRect = CGRectZero
+    public var bounds : CGRect = CGRectZero
     public var elements : [Element] = []
 
     // MARK: - Element protocol
@@ -20,7 +20,7 @@ public class Compound: Element {
     }
 
     public func sizeThatFits(size: CGSize) -> CGSize {
-        return self.frame.size
+        return self.bounds.size
     }
 
     public func intrinsicContentSize() -> CGSize {

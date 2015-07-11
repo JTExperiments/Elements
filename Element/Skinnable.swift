@@ -17,7 +17,7 @@ extension Skinnable {
     // Element
 
     public func intrinsicContentSize() -> CGSize {
-        return self.applyToSize(self.frame.size)
+        return self.applyToSize(self.bounds.size)
     }
 
     public func applyToSize(size: CGSize) -> CGSize {
@@ -28,8 +28,8 @@ extension Skinnable {
         return newSize
     }
 
-    public func frameThatFits(frame: CGRect) -> CGRect {
-        var newFrame = self.frame
+    public func frameThatFits(bounds: CGRect) -> CGRect {
+        var newFrame = self.bounds
         newFrame.size = self.applyToSize(newFrame.size)
         return newFrame
     }

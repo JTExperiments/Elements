@@ -25,7 +25,7 @@ label.sizeThatFits(CGSizeMake(50, 50))
 
 //view.addSubview(label)
 //label.autoresizingMask = [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
-label.frame = view.bounds
+label.bounds = view.bounds
 label.intrinsicContentSize()
 
 view.sizeThatFits(CGSizeMake(100, 100))
@@ -33,14 +33,14 @@ view.intrinsicContentSize()
 
 
 view.sizeToFit()
-view.frame
+view.bounds
 
 //let stackView = UIStackView()
 //stackView.addArrangedSubview(view)
-//stackView.frame
+//stackView.bounds
 //stackView.distribution = UIStackViewDistribution.EqualCentering
 //stackView.alignment = UIStackViewAlignment.Center
 //
 //stackView
 //
-//XCPShowView("stack", view: stackView)
+//XCPShowView("stack", view: stackVie

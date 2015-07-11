@@ -12,11 +12,11 @@ public class Stone : Skinnable {
 
     private let size : CGSize
     public var padding : Edge = Edge()
-    public var frame : CGRect = CGRectZero
+    public var bounds : CGRect = CGRectZero
 
     public init(size: CGSize) {
         self.size = size
-        self.frame = CGRectMake(0, 0, size.width, size.height)
+        self.bounds = CGRectMake(0, 0, size.width, size.height)
     }
 
     public func sizeThatFits(size: CGSize) -> CGSize {

@@ -18,7 +18,7 @@ public class Balloon : Wrapper, Skinnable {
         self.volume = volume
         super.init()
         let root : CGFloat = sqrt(volume)
-        self.frame = CGRectMake(0, 0, ceil(root), round(root))
+        self.bounds = CGRectMake(0, 0, ceil(root), round(root))
     }
 
     public override func sizeThatFits(size: CGSize) -> CGSize {

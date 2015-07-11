@@ -36,7 +36,7 @@ class CompoundTests: XCTestCase {
     }
 
     func testFrame() {
-        compound.frame = CGRectMake(0, 0, 300, 300)
+        compound.bounds = CGRectMake(0, 0, 300, 300)
         XCTAssertEqual(compound.intrinsicContentSize(), CGSizeMake(-1, -1), "")
         XCTAssertEqual(compound.sizeThatFits(CGSizeZero), CGSizeMake(300, 300), "")
 
