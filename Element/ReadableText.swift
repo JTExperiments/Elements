@@ -12,6 +12,7 @@ public struct ReadableText : Element {
 
     public var font : UIFont?
     public var text : String
+    public var frame : CGRect = CGRectNull
 
     // MARK: - Element protocol
 

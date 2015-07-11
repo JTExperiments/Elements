@@ -24,6 +24,9 @@ public struct Edge {
     public var volume: CGFloat {
         return self.width * self.height
     }
+    public var size: CGSize {
+        return CGSizeMake(self.width, self.height)
+    }
 
     public init(top: CGFloat = 0, left: CGFloat = 0, bottom: CGFloat = 0, right: CGFloat = 0) {
         self.left = left

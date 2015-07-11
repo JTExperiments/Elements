@@ -8,25 +8,23 @@
 
 import Foundation
 
-public class Water : Compound {
+public class Water : Element {
 
+    public var frame : CGRect = CGRectZero
     public let liter : CGFloat
 
     public init(liter: CGFloat) {
         self.liter = liter
+        self.frame = CGRectMake(0, 0, liter, 1)
     }
 
-    public override func sizeThatFits(size: CGSize) -> CGSize {
-        if liter + self.padding.volume > size.width * size.height {
+    public func sizeThatFits(size: CGSize) -> CGSize {
+        if liter > size.width * size.height {
             warn("unable to contain liters:\(liter) in size:\(size). Leaking away...")
-            return CGSizeMake(
-                max(size.width, self.padding.width),
-                max(size.height, self.padding.height)
-            )
-        } else if liter > size.width || self.padding.width > size.width {
-            let height = min(ceil(liter / size.width) + self.padding.height, size.height)
-            let width = max(size.width, self.padding.width)
-            return CGSizeMake(width, height)
+            return self.intrinsicContentSize()
+        } else if liter > size.width {
+            let height = ceil(liter / size.width)
+            return CGSizeMake(size.width, height)
         } else if liter > size.height {
             let width = ceil(liter / size.height)
             return CGSizeMake(width, size.height)
@@ -35,8 +33,19 @@ public class Water : Compound {
         }
     }
 
-    public override func intrinsicContentSize() -> CGSize {
-        return CGSizeMake(liter + self.padding.width, 1 + self.padding.height)
+    public func intrinsicContentSize() -> CGSize {
+        return CGSizeMake(liter, 1)
     }
-    
+
+    public func frameThatFits(frame: CGRect) -> CGRect {
+        let size = sizeThatFits(frame.size)
+        let newFrame = CGRectMake(
+            self.frame.origin.x,
+            self.frame.origin.y,
+            size.width,
+            size.height)
+        speak("Water: frameThatFits: old:\(frame.size), new: \(newFrame)")
+        return newFrame
+    }
+
 }

@@ -8,20 +8,23 @@
 
 import Foundation
 
-public class Stone : Compound {
+public class Stone : Element, Skin {
 
     private let size : CGSize
+    public var padding : Edge = Edge()
+    public var frame : CGRect = CGRectZero
 
     public init(size: CGSize) {
         self.size = size
+        self.frame = CGRectMake(0, 0, size.width, size.height)
     }
 
-    public override func sizeThatFits(size: CGSize) -> CGSize {
-        let contentSize = self.intrinsicContentSize()
-        return CGSizeMake(contentSize.width + padding.width, contentSize.height + padding.height)
+    public func sizeThatFits(size: CGSize) -> CGSize {
+        return self.intrinsicContentSize()
     }
 
-    public override func intrinsicContentSize() -> CGSize {
-        return self.size
+    public func intrinsicContentSize() -> CGSize {
+        return self.applyToSize(self.size)
     }
+
 }

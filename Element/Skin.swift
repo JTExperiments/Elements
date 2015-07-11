@@ -9,6 +9,20 @@
 import Foundation
 
 public protocol Skin {
-    var margin:Edge { get }
     var padding:Edge { get }
+}
+
+extension Skin {
+
+    public func intrinsicContentSize() -> CGSize {
+        return self.applyToSize(CGSizeZero)
+    }
+
+    public func applyToSize(size: CGSize) -> CGSize {
+        let newSize = CGSizeMake(
+            size.width + self.padding.width,
+            size.height + self.padding.height
+        )
+        return newSize
+    }
 }

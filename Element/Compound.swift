@@ -10,12 +10,8 @@ import Foundation
 
 public class Compound: Element {
 
+    public var frame : CGRect = CGRectNull
     public var elements : [Element] = []
-
-    // MARK: - Skin protocol
-
-    public var margin:Edge = Edge()
-    public var padding:Edge = Edge()
 
     // MARK: - Element protocol
 
@@ -24,15 +20,26 @@ public class Compound: Element {
     }
 
     public func sizeThatFits(size: CGSize) -> CGSize {
-        let fittingSize = CGSizeMake(
-            min(padding.width, size.width),
-            min(padding.height, size.height)
-        )
-        return fittingSize
+//        var rect : CGRect = CGRectNull
+//        for (index, element) in elements.enumerate() {
+//            var elementRect = CGRectZero
+//            if index == 0 {
+//                elementRect.size = size
+//            }
+//            rect = CGRectUnion(rect, element.frameThatFits(elementRect))
+//        }
+//        return rect.size
+//        return size
+        return self.intrinsicContentSize()
     }
 
     public func intrinsicContentSize() -> CGSize {
-        return CGSizeZero
+        var rect = CGRectZero
+        for element in elements {
+            rect = CGRectUnion(rect, element.frameThatFits(self.frame))
+        }
+        return rect.size
+//        return CGSizeMake(-1, -1)
     }
 
     public func addElement(element: Element) {

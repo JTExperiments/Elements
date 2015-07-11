@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1A4B55F91B505CF500280F55 /* Stone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55F81B505CF500280F55 /* Stone.swift */; };
 		1A4B55FB1B505D3B00280F55 /* StoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55FA1B505D3B00280F55 /* StoneTests.swift */; };
+		1A4B55FD1B50CB1000280F55 /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55FC1B50CB1000280F55 /* Balloon.swift */; };
+		1A4B55FF1B50CD6A00280F55 /* BalloonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55FE1B50CD6A00280F55 /* BalloonTests.swift */; };
 		1A4D03691B5042F800C32D22 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03681B5042F800C32D22 /* Element.swift */; };
 		1A4D036F1B50437000C32D22 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D036E1B50437000C32D22 /* Edge.swift */; };
 		1A4D03711B5043B400C32D22 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03701B5043B400C32D22 /* Skin.swift */; };
@@ -32,8 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A15ED081B510E6500CF76DF /* Element.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Element.playground; sourceTree = "<group>"; };
 		1A4B55F81B505CF500280F55 /* Stone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stone.swift; sourceTree = "<group>"; };
 		1A4B55FA1B505D3B00280F55 /* StoneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoneTests.swift; sourceTree = "<group>"; };
+		1A4B55FC1B50CB1000280F55 /* Balloon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
+		1A4B55FE1B50CD6A00280F55 /* BalloonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonTests.swift; sourceTree = "<group>"; };
 		1A4D03681B5042F800C32D22 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		1A4D036E1B50437000C32D22 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		1A4D03701B5043B400C32D22 /* Skin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 				1A4D03761B50456000C32D22 /* ReadableText.swift */,
 				1A4D03791B50471200C32D22 /* Water.swift */,
 				1A4B55F81B505CF500280F55 /* Stone.swift */,
+				1A4B55FC1B50CB1000280F55 /* Balloon.swift */,
 			);
 			name = Element;
 			sourceTree = "<group>";
@@ -83,6 +89,7 @@
 		1A9604981B5036E70088AD18 = {
 			isa = PBXGroup;
 			children = (
+				1A15ED081B510E6500CF76DF /* Element.playground */,
 				1A9604A41B5036E70088AD18 /* Element */,
 				1A9604B11B5036E70088AD18 /* ElementTests */,
 				1A9604A31B5036E70088AD18 /* Products */,
@@ -124,6 +131,7 @@
 				1A9604B41B5036E70088AD18 /* CompoundTests.swift */,
 				1A4D037D1B5048BF00C32D22 /* WaterTests.swift */,
 				1A4B55FA1B505D3B00280F55 /* StoneTests.swift */,
+				1A4B55FE1B50CD6A00280F55 /* BalloonTests.swift */,
 				1A9604B21B5036E70088AD18 /* Supporting Files */,
 			);
 			path = ElementTests;
@@ -252,6 +260,7 @@
 				1A4D03691B5042F800C32D22 /* Element.swift in Sources */,
 				1A4D03711B5043B400C32D22 /* Skin.swift in Sources */,
 				1A4D03771B50456000C32D22 /* ReadableText.swift in Sources */,
+				1A4B55FD1B50CB1000280F55 /* Balloon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +271,7 @@
 				1A4B55FB1B505D3B00280F55 /* StoneTests.swift in Sources */,
 				1A9604B51B5036E70088AD18 /* CompoundTests.swift in Sources */,
 				1A4D037E1B5048BF00C32D22 /* WaterTests.swift in Sources */,
+				1A4B55FF1B50CD6A00280F55 /* BalloonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
