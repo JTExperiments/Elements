@@ -10,7 +10,7 @@ import Foundation
 
 public class Compound: Element {
 
-    public var frame : CGRect = CGRectNull
+    public var frame : CGRect = CGRectZero
     public var elements : [Element] = []
 
     // MARK: - Element protocol

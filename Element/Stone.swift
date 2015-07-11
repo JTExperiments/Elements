@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Stone : Element, Skin {
+public class Stone : Skin {
 
     private let size : CGSize
     public var padding : Edge = Edge()
@@ -23,8 +23,14 @@ public class Stone : Element, Skin {
         return self.intrinsicContentSize()
     }
 
-    public func intrinsicContentSize() -> CGSize {
-        return self.applyToSize(self.size)
-    }
+//    public func intrinsicContentSize() -> CGSize {
+//        return self.applyToSize(self.size)
+//    }
+
+//    public func frameThatFits(frame: CGRect) -> CGRect {
+//        var newFrame =
+//        newFrame.size = self.applyToSize(frame.size)
+//        return newFrame
+//    }
 
 }

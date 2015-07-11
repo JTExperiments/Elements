@@ -8,14 +8,16 @@
 
 import Foundation
 
-public protocol Skin {
+public protocol Skin : Element {
     var padding:Edge { get }
 }
 
 extension Skin {
 
+    // Element
+
     public func intrinsicContentSize() -> CGSize {
-        return self.applyToSize(CGSizeZero)
+        return self.applyToSize(self.frame.size)
     }
 
     public func applyToSize(size: CGSize) -> CGSize {
@@ -24,5 +26,11 @@ extension Skin {
             size.height + self.padding.height
         )
         return newSize
+    }
+
+    public func frameThatFits(frame: CGRect) -> CGRect {
+        var newFrame = self.frame
+        newFrame.size = self.applyToSize(newFrame.size)
+        return newFrame
     }
 }

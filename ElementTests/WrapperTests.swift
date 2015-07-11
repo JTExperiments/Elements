@@ -72,19 +72,19 @@ class WrapperTests: XCTestCase {
     }
     func testAddingStoneWithLeftPadding() {
         let stone = Stone(size: CGSizeMake(1, 1))
-        stone.padding = Edge(top: 1, left: 0, bottom: 0, right: 0)
+        stone.padding = Edge(top: 0, left: 1, bottom: 0, right: 0)
         wrapper.addElement(stone)
-        XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeMake(1, 2), "")
+        XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeMake(2, 1), "")
     }
     func testAddingStoneWithRightPadding() {
         let stone = Stone(size: CGSizeMake(1, 1))
-        stone.padding = Edge(top: 1, left: 0, bottom: 0, right: 0)
+        stone.padding = Edge(top: 0, left: 0, bottom: 0, right: 1)
         wrapper.addElement(stone)
-        XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeMake(1, 2), "")
+        XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeMake(2, 1), "")
     }
     func testAddingStoneWithBottomPadding() {
         let stone = Stone(size: CGSizeMake(1, 1))
-        stone.padding = Edge(top: 1, left: 0, bottom: 0, right: 0)
+        stone.padding = Edge(top: 0, left: 0, bottom: 1, right: 0)
         wrapper.addElement(stone)
         XCTAssertEqual(wrapper.intrinsicContentSize(), CGSizeMake(1, 2), "")
     }
