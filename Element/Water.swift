@@ -17,12 +17,16 @@ public class Water : Compound {
     }
 
     public override func sizeThatFits(size: CGSize) -> CGSize {
-        if liter > size.width * size.height {
+        if liter + self.padding.volume > size.width * size.height {
             warn("unable to contain liters:\(liter) in size:\(size). Leaking away...")
-            return size
-        } else if liter > size.width {
-            let height = ceil(liter / size.width)
-            return CGSizeMake(size.width, height)
+            return CGSizeMake(
+                max(size.width, self.padding.width),
+                max(size.height, self.padding.height)
+            )
+        } else if liter > size.width || self.padding.width > size.width {
+            let height = min(ceil(liter / size.width) + self.padding.height, size.height)
+            let width = max(size.width, self.padding.width)
+            return CGSizeMake(width, height)
         } else if liter > size.height {
             let width = ceil(liter / size.height)
             return CGSizeMake(width, size.height)
@@ -32,7 +36,7 @@ public class Water : Compound {
     }
 
     public override func intrinsicContentSize() -> CGSize {
-        return CGSizeMake(liter, 1)
+        return CGSizeMake(liter + self.padding.width, 1 + self.padding.height)
     }
     
 }

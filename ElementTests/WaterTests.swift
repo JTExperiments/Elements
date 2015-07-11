@@ -35,16 +35,18 @@ class WaterTests: XCTestCase {
 
     func testIntrinsicSize() {
         XCTAssertEqual(water.intrinsicContentSize(), CGSizeMake(9, 1), "")
+        water.padding = Edge(top: 1, left: 2, bottom:1, right: 2) // 4 x 2
+        XCTAssertEqual(water.intrinsicContentSize(), CGSizeMake(13, 3), "")
     }
 
     func testPaddingWater() {
-        water.padding = Edge(top: 1, left: 2, bottom:1, right: 2)
-//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(3, 5)), CGSizeMake(3, 3), "")
-//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(1, 9)), CGSizeMake(1, 9), "")
-//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(9, 1)), CGSizeMake(9, 1), "")
-//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(5, 5)), CGSizeMake(5, 2), "")
-//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(2, 6)), CGSizeMake(2, 5), "")
-//        XCTAssertEqual(water.sizeThatFits(CGSizeMake(2, 2)), CGSizeMake(2, 2), "")
+        water.padding = Edge(top: 1, left: 2, bottom:1, right: 2) // 2 x 4
+        XCTAssertEqual(water.sizeThatFits(CGSizeMake(20, 20)), CGSizeMake(13, 3), "")
+        XCTAssertEqual(water.sizeThatFits(CGSizeMake(0, 20)), CGSizeMake(4, 2), "")
+        XCTAssertEqual(water.sizeThatFits(CGSizeMake(20, 0)), CGSizeMake(4, 2), "")
+        XCTAssertEqual(water.sizeThatFits(CGSizeMake(5, 5)), CGSizeMake(5, 5), "")
+        XCTAssertEqual(water.sizeThatFits(CGSizeMake(5, 3)), CGSizeMake(5, 3), "")
+        XCTAssertEqual(water.sizeThatFits(CGSizeMake(3, 5)), CGSizeMake(4, 5), "")
     }
 
 }
