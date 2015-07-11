@@ -26,7 +26,8 @@ class BalloonTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
+    // MARK: Custom Bounds
     func testEmptyIntrinsicSize() {
         XCTAssertEqual(balloon.intrinsicContentSize(), CGSizeZero, "")
     }
@@ -47,9 +48,31 @@ class BalloonTests: XCTestCase {
         XCTAssertEqual(balloon.intrinsicContentSize(), CGSizeMake(13, 3), "")
     }
 
+    // MARK: Normal Bounds
+
+    func testIntrinsicSizeWithNormalBounds() {
+        let balloon = Balloon(volume: 9)
+        XCTAssertEqual(balloon.intrinsicContentSize(), CGSizeZero, "")
+    }
+
+    func testIntrinsicSizeWithWaterAndNormalBounds() {
+        let balloon = Balloon(volume: 9)
+        balloon.addElement(Water(liter: 9))
+        XCTAssertEqual(balloon.intrinsicContentSize(), CGSizeMake(3, 3), "")
+    }
+
+    func testIntrinsicSizeWithPaddingAndWaterNormalBounds() {
+        let balloon = Balloon(volume: 9)
+        balloon.addElement(Water(liter: 9))
+        balloon.padding = Edge(top: 1, left: 2, bottom:1, right: 2) // 4 x 2
+        XCTAssertEqual(balloon.intrinsicContentSize(), CGSizeMake(7, 5), "")
+    }
+
+    // MARK: Complex
+
     func testSizeThatFitsWithWater() {
 
-        balloon.addElement(Water(liter: 9))
+        balloon.addElement(Water(liter: 9))  // 9, 1
         balloon.padding = Edge(top: 1, left: 2, bottom:1, right: 2) // 4 x 2
 
         XCTAssertEqual(balloon.sizeThatFits(CGSizeMake(20, 20)), CGSizeMake(13, 3), "")

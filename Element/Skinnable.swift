@@ -21,11 +21,7 @@ extension Skinnable {
     }
 
     public func applyToSize(size: CGSize) -> CGSize {
-        let newSize = CGSizeMake(
-            size.width + self.padding.width,
-            size.height + self.padding.height
-        )
-        return newSize
+        return self.padding.applyToSize(size)
     }
 
     public func frameThatFits(bounds: CGRect) -> CGRect {

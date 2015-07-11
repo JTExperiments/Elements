@@ -34,4 +34,12 @@ public struct Edge {
         self.right = right
         self.top = top
     }
+
+    public func applyToSize(size: CGSize) -> CGSize {
+        let newSize = CGSizeMake(
+            size.width + self.width,
+            size.height + self.height
+        )
+        return newSize
+    }
 }

@@ -11,15 +11,6 @@ import Foundation
 public class Wrapper : Compound {
 
     public override func sizeThatFits(size: CGSize) -> CGSize {
-//        var rect : CGRect = CGRectNull
-//        for (index, element) in elements.enumerate() {
-//            var elementRect = CGRectZero
-//            if index == 0 {
-//                elementRect.size = size
-//            }
-//            rect = CGRectUnion(rect, element.boundsThatFits(elementRect))
-//        }
-//        return rect.size
         return self.intrinsicContentSize()
     }
 

@@ -19,7 +19,7 @@ public class Water : Element {
     }
 
     public func sizeThatFits(size: CGSize) -> CGSize {
-        if liter > size.width * size.height {
+        if liter > size.width * size.height && size.width > self.intrinsicContentSize().width {
             warn("unable to contain liters:\(liter) in size:\(size). Leaking away...")
             return self.intrinsicContentSize()
         } else if liter > size.width {
@@ -29,12 +29,12 @@ public class Water : Element {
             let width = ceil(liter / size.height)
             return CGSizeMake(width, size.height)
         } else {
-            return size
+            return intrinsicContentSize()
         }
     }
 
     public func intrinsicContentSize() -> CGSize {
-        return CGSizeMake(liter, 1)
+        return self.bounds.size
     }
 
     public func frameThatFits(bounds: CGRect) -> CGRect {

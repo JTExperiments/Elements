@@ -30,7 +30,8 @@ class WaterTests: XCTestCase {
         XCTAssertEqual(water.sizeThatFits(CGSizeMake(9, 1)), CGSizeMake(9, 1), "")
         XCTAssertEqual(water.sizeThatFits(CGSizeMake(5, 5)), CGSizeMake(5, 2), "")
         XCTAssertEqual(water.sizeThatFits(CGSizeMake(2, 6)), CGSizeMake(2, 5), "")
-        XCTAssertEqual(water.sizeThatFits(CGSizeMake(2, 2)), CGSizeMake(9, 1), "")
+        XCTAssertEqual(water.sizeThatFits(CGSizeMake(2, 2)), CGSizeMake(2, 5), "")
+        XCTAssertEqual(water.sizeThatFits(CGSizeMake(1, 1)), CGSizeMake(1, 9), "")
     }
 
     func testIntrinsicSize() {
