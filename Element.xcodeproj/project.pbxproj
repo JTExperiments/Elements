@@ -13,7 +13,7 @@
 		1A4B55FF1B50CD6A00280F55 /* BalloonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B55FE1B50CD6A00280F55 /* BalloonTests.swift */; };
 		1A4D03691B5042F800C32D22 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03681B5042F800C32D22 /* Element.swift */; };
 		1A4D036F1B50437000C32D22 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D036E1B50437000C32D22 /* Edge.swift */; };
-		1A4D03711B5043B400C32D22 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03701B5043B400C32D22 /* Skin.swift */; };
+		1A4D03711B5043B400C32D22 /* Skinnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03701B5043B400C32D22 /* Skinnable.swift */; };
 		1A4D03771B50456000C32D22 /* ReadableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03761B50456000C32D22 /* ReadableText.swift */; };
 		1A4D037A1B50471200C32D22 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D03791B50471200C32D22 /* Water.swift */; };
 		1A4D037C1B50485400C32D22 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D037B1B50485400C32D22 /* Compound.swift */; };
@@ -43,7 +43,7 @@
 		1A4B55FE1B50CD6A00280F55 /* BalloonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonTests.swift; sourceTree = "<group>"; };
 		1A4D03681B5042F800C32D22 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		1A4D036E1B50437000C32D22 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
-		1A4D03701B5043B400C32D22 /* Skin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
+		1A4D03701B5043B400C32D22 /* Skinnable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skinnable.swift; sourceTree = "<group>"; };
 		1A4D03761B50456000C32D22 /* ReadableText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadableText.swift; sourceTree = "<group>"; };
 		1A4D03791B50471200C32D22 /* Water.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		1A4D037B1B50485400C32D22 /* Compound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compound.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			children = (
 				1A9604A71B5036E70088AD18 /* Element.h */,
 				1A9604A51B5036E70088AD18 /* Supporting Files */,
-				1A4D03701B5043B400C32D22 /* Skin.swift */,
+				1A4D03701B5043B400C32D22 /* Skinnable.swift */,
 				1A4D036E1B50437000C32D22 /* Edge.swift */,
 				1A4D03781B50456D00C32D22 /* Element */,
 			);
@@ -265,7 +265,7 @@
 				1A4D037C1B50485400C32D22 /* Compound.swift in Sources */,
 				1A4D037A1B50471200C32D22 /* Water.swift in Sources */,
 				1A4D03691B5042F800C32D22 /* Element.swift in Sources */,
-				1A4D03711B5043B400C32D22 /* Skin.swift in Sources */,
+				1A4D03711B5043B400C32D22 /* Skinnable.swift in Sources */,
 				1A4D03771B50456000C32D22 /* ReadableText.swift in Sources */,
 				1A4B55FD1B50CB1000280F55 /* Balloon.swift in Sources */,
 			);

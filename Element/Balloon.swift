@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Balloon : Wrapper, Skin {
+public class Balloon : Wrapper, Skinnable {
 
     public var padding : Edge = Edge()
 

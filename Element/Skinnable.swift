@@ -1,5 +1,5 @@
 //
-//  Skin.swift
+//  Skinnable.swift
 //  Element
 //
 //  Created by James Tang on 11/7/15.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol Skin : Element {
+public protocol Skinnable : Element {
     var padding:Edge { get }
 }
 
-extension Skin {
+extension Skinnable {
 
     // Element
 
